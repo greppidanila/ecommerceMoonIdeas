@@ -1,0 +1,168 @@
+:root {
+  /* Colors */
+  --white: #FFFFFF;
+  --black: #000000;
+  --background: var(--white);
+  --secondary: #B3B3B3;
+  
+  /* Base font size in rem */
+  --font-size: 16px;
+
+  /* Header height in rem */
+  --header-height: 3.625rem; /* 58px */
+
+  /* Font sizes in rem */
+  --small-font-size: 0.8125rem; /* 13px */
+  --normal-font-size: 0.875rem; /* 14px */
+  --medium-font-size: 1rem; /* 16px */
+  --large-font-size: 1.125rem; /* 18px */
+  --biggest-font-size: 1.75rem; /* 28px */
+  --extra-large-font-size: 1.875rem; /* 30px */
+  --extra-extra-large-font-size: 2.0625rem; /* 33px */
+
+  /* Font family and weights */
+  --font-family: 'SF Pro Display', sans-serif;
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+}
+
+
+/* -- Layout -- */
+body, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;    
+}
+
+body {    
+  position: relative;
+  width: 100%;
+  height: auto;
+  font: var(--font-normal) var(--normal-font-size) / 1.5 var(--font-family);
+  color: var(--black);
+  background-color: var(--background);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+}
+
+h1 {
+  font-size: var(--biggest-font-size);
+}
+
+h2 {
+  font-size: var(--biggest-font-size);
+  font-weight: var(--font-normal);
+}
+
+p {
+  font-size: var(--small-font-size);
+  font-weight: var(--font-bold);
+}
+
+input, h3 {
+  font-size: var(--small-font-size);
+  font-weight: var(--font-normal);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit
+}
+
+.mobile {
+  display: none !important;
+}
+
+.desktop {
+  display: block !important;
+}
+
+@media screen and (min-width: 968px) {
+  :root {
+    --header-height: 4.625rem; /* 74px */
+  }
+}
+
+/*-- Slider --*/
+.slider{
+  width: 100%;
+  height: auto;
+  position: relative;
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+.slider .slide img {
+  height: auto;
+  width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  .slider .slide img {
+    height: auto;
+    width: 100%;
+  }
+}
+
+/* -- Banner New Collection -- */
+.banner {
+  background: url('/assets/files/images/compressed/bannerNuevaColeccionMobile.webp') no-repeat center top;
+  background-size: cover;
+  height: 447px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: var(--white);
+  padding-bottom: 40px;
+}
+
+.bannerContent{
+  margin: 0 auto;
+  width: 90%;
+}
+
+.bannerContent h2{
+  font-size: var(--extra-extra-large-font-size);
+  font-weight: var(--font-semibold);
+}
+
+.bannerLink {
+  text-decoration: underline;
+  font-size: var(--large-font-size)
+}
+
+
+
+@media screen and (min-width: 968px) {
+  .banner {
+    background: url('/assets/files/images/compressed/bannerNuevaColeccion.webp') no-repeat center top;
+    background-size: cover;
+    background-position-x: 62%;
+    height: 447px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

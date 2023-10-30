@@ -1,0 +1,7 @@
+Compremí imágenes a WEBP con Squosh y Converter
+Agregué la BOLD font
+Convertí las fuentes .otf a formatos web
+
+Distinta imagen para banner, quería acomodarla con background position pero terminé reemplazando la img porque no quedaba tal cual figma.
+
+@foreach($productos as $producto)

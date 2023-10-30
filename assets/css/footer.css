@@ -1,0 +1,63 @@
+footer{
+    position: relative;
+    width: 100%;
+    color: var(--white);
+    background: var(--black);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.newsletterHeading h2{
+    line-height: 27px;
+    font-size: var(--biggest-font-size);
+    margin: 47px auto 27px;
+    max-width: 90%;
+}
+
+.newsletterHeading h2 span {
+    font-weight: var(--font-bold);
+    font-style: italic
+}
+
+.newsletterInput{
+    max-width: 80%;
+    margin: 0 auto 36px;
+    display: flex;
+    align-items: center;
+    height: 44px;
+    background: var(--white);
+    color: var(--black);
+    border: none;
+    padding: 0 15px;
+} 
+
+#newsletterInputEmail::placeholder {
+    color: var(--black);
+}
+
+#newsletterInputButton {
+    text-align: right;
+    width: 100%;
+    font-size: var(--medium-font-size);
+    font-weight: var(--font-semibold);
+    border: none;
+    cursor: pointer;
+}
+
+
+@media screen and (min-width: 968px) {
+
+    .newsletterHeading h2{
+        font-size: var(--extra-large-font-size);
+        margin: 60px auto 26px;
+    }
+    
+    .newsletterInput {
+        max-width: 50%;
+        height: 63px;
+        padding: 0 25px;  
+    }
+}

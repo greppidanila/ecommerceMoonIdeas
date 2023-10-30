@@ -1,0 +1,13 @@
+.header {
+    position: fixed;
+    z-index: 100;
+    background-color: red;
+    left: 0;
+    right: 0; 
+    top: 20;
+    height: var(--header-height);
+    width: 90%;
+    margin: 0 auto; 
+    display: flex;
+    align-items: center;
+  }
