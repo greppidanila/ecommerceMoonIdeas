@@ -13,6 +13,15 @@ header {
   height: var(--header-height);
 }
 
+.mobileToggle {
+  padding-left: 17px;
+}
+
+.mobileToggle img {
+  width: 18px;
+  height: 12px;
+}
+
 .mobileOnly{
   display: block !important;
 }
@@ -21,43 +30,7 @@ header {
   display: none !important;
 } 
 
-.mobileToggle {
-  padding-left: 17px;
-}
-
-.mobileToggle img {
-  width: 24px;
-  height: 24px;
-}
-
-.logo{
-  display: flex;
-  justify-content: center;
-}
-
-.logo img{
-  max-width: 124px;
-}
-
-.icons {
-  display: flex;
-}
-
-.icons span {
-  display: flex;
-}
-
-.icons span img {
-  padding-right: 5px;
-  width: 12.5px;
-}
-
-.cartAmount {
-  padding-right: 17px;
-}
-
-/* Media query para dispositivos de escritorio */
-@media (min-width: 1024px) {
+@media (min-width: 968px) {
   .header{
     height: 74px;
   }
@@ -69,7 +42,23 @@ header {
   .desktopOnly{
     display: block !important;
   }
+  
+  .menuHeader{
+    display: flex;
+    justify-content: space-between;
+  }
+}
 
+/* Estilos para el logotipo */
+.logo{
+  display: flex;
+  justify-content: center;
+}
+
+.logo img{
+  max-width: 124px;
+}
+@media (min-width: 968px) {
   .logo {
     padding-left: 24px;
   }
@@ -77,11 +66,50 @@ header {
   .logo img{
     max-width: 100%;
   }
+}
 
-  .desktopNav {
-      display: flex;
+/* Estilos para los íconos y cantidad en el carrito */
+.icons {
+  display: flex;
+}
+
+.icons span {
+  display: flex;
+  align-items: center;
+}
+
+.icons span img {
+  padding-right: 5px;
+  width: 100%;
+}
+
+.cartAmount {
+  padding-right: 17.5px;
+}
+
+@media (min-width: 968px) {
+  .icons {    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
   }
 
+  .icons span{    
+    padding-left: 27px;
+  }
+
+  .icons span img{
+    width: 13px;
+  }
+
+  .cartAmount {
+    padding-right: 30px;
+  }
+}
+
+/* Estilos para navbar en escritorio */
+@media (min-width: 968px) {
   .desktopNav ul {
       list-style: none;
       display: flex;
@@ -97,19 +125,14 @@ header {
       font-weight: var(--font-medium);
   }
   
-
-  /* Estilos para los íconos de flecha */
+  /* ícono de flecha para menú desplegable */
   .desktopNav img {
     width: 8px;
     height: auto;
     margin-left: 5px; 
   }
 
-  .menuHeader{
-    display: flex;
-    justify-content: space-between;
-  }
-
+  /* Evitar perdida de hover entre menú y submenu flotante */
   .transparentDiv {
     display: none;
     position: absolute;
@@ -121,14 +144,15 @@ header {
   
   .desktopNav ul li .dropdownMenu {
     position: absolute;
-    top: 70px; /* Mover el submenu hacia abajo */
+    top: 60px;
     left: -35px;
     display: none;
     background-color: var(--white);
   }
 
-  /* Muestra el submenú cuando se pasa el cursor sobre el elemento principal */
-  .desktopNav ul li:hover .transparentDiv, .desktopNav ul li:hover .dropdownMenu, .desktopNav ul li .dropdownMenu ul {
+  .desktopNav ul li:hover .transparentDiv, 
+  .desktopNav ul li:hover .dropdownMenu, 
+  .desktopNav ul li .dropdownMenu ul {
     display: block;
   }
 
@@ -143,19 +167,5 @@ header {
 
   .desktopNav li:hover ul .subMenuItem:hover {
     text-decoration: underline;
-  }
-
-  .icons {    
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .icons span{    
-    padding-left: 27px;
-  }
-
-  .cartAmount {
-    padding-right: 30px;
   }
 }

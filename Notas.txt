@@ -2,6 +2,12 @@ Comprimir imágenes a WEBP con Squosh y Converter
 Agregar la BOLD font
 Convertir fuentes .otf a formatos web
 Header con submenu flotante / espacio interno que dificulta la continuidad del hover
-Hero con slider Jquery y responsive
+Hero con slider Jquery y responsive, distinta imagen para mobile y desktop
 Lista de productos, priorizar uso de JS con @foreach
 Distinta imagen de banner final en mobile y desktop: acomodarla con background position / reemplar la img segun dispositivo
+
+Enfoque en seo:
+-Estructura de títulos y encabezados
+-Inclusión de meta etiquetas
+-Uso de alt en img
+-Uso de etiquetas semánticas 

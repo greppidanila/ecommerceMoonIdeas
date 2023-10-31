@@ -47,16 +47,14 @@ footer{
     cursor: pointer;
 }
 
-
 @media screen and (min-width: 968px) {
-
     .newsletterHeading h2{
         font-size: var(--extra-large-font-size);
         margin: 60px auto 26px;
     }
-    
+
     .newsletterInput {
-        max-width: 50%;
+        max-width: calc(626px - 50px);
         height: 63px;
         padding: 0 25px;  
     }

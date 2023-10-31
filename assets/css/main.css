@@ -29,7 +29,7 @@
 }
 
 
-/* -- Layout -- */
+/* -------------- Layout -------------- */
 body, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -112,12 +112,11 @@ a {
   }
 }
 
-/*-- Slider --*/
+/*-------------- Slider ----------------*/
 
 .slider {
   position: relative;
   width: 100%;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -130,8 +129,18 @@ a {
   object-position: center center;
 }
 
-.slick-dots{
-  bottom: 5px !important;
+.slider .slick-slide {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+  height: auto;
+}
+
+.slider .slick-slide.slick-current {
+  opacity: 1;
+}
+
+.slider .slick-slide:not(.slick-current) {
+  opacity: 0;
 }
 
 @media (min-width: 968px) {
@@ -143,23 +152,7 @@ a {
   }
 }
 
-
-/* CSS adicional para rotar las imágenes */
-.slider .slick-slide {
-  opacity: 1;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.slider .slick-slide.slick-current {
-  opacity: 1;
-}
-
-.slider .slick-slide:not(.slick-current) {
-  opacity: 0;
-}
-
-
-/* -- Banner New Collection -- */
+/* -------------- Banner New Collection -------------- */
 .banner {
   background: url('/assets/files/images/compressed/bannerNuevaColeccionMobile.webp') no-repeat center top;
   background-size: cover;
@@ -168,12 +161,12 @@ a {
   flex-direction: column;
   justify-content: flex-end;
   color: var(--white);
-  padding-bottom: 40px;
 }
 
 .bannerContent{
   margin: 0 auto;
   width: 90%;
+  padding-bottom: 40px;
 }
 
 .bannerContent h2{
@@ -195,5 +188,8 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+  .bannerContent{
+    padding-bottom: 0px !important;
   }
 }

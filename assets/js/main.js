@@ -1,3 +1,4 @@
+//Script que carga dinámicamente datos de productos y crea cards de productos en el DOM
 document.addEventListener("DOMContentLoaded", function () {
     const productos = [
         {

@@ -1,9 +1,8 @@
 @font-face {
     font-family: 'SF Pro Display Bold';
     src: url('SFProDisplay-Bold.woff') format('woff');
-    font-weight: bold;
+    font-weight: 700;
     font-style: normal;
-    font-display: swap;
 }
 
 @font-face {
@@ -11,7 +10,6 @@
     src: url('SFProDisplay-SemiboldItalic.woff') format('woff');
     font-weight: 600;
     font-style: italic;
-    font-display: swap;
 }
 
 @font-face {
@@ -19,7 +17,6 @@
     src: url('SFProDisplay-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
-    font-display: swap;
 }
 
 @font-face {
@@ -27,6 +24,5 @@
     src: url('SFProDisplay-Regular.woff') format('woff');
     font-weight: 400;
     font-style: normal;
-    font-display: swap;
 }
 

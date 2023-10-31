@@ -24,6 +24,8 @@
 <body>
     <!-- Header -->
     <header>
+        <h1 style="text-indent: -9999px; overflow: hidden; position: absolute;">MoonIdeas, indumentaria en Uruguay</h1>
+
         <div class="mobileToggle mobileOnly">
             <a href="/index.html">
                 <img src="/assets/files/icons/toggle.svg" alt="Icono de menú">
@@ -84,18 +86,34 @@
     
     <main>
         <!-- Slider -->
-        <section class="slider">
-            <div>
-                <img src="/assets/files/images/compressed/modaMobile.webp"
-                alt="Moda femenina">
+        <section class="sliderContainer">
+            <div class="slider mobileOnly">
+                <div>
+                    <img src="/assets/files/images/compressed/modaMobile.webp"
+                    alt="Moda femenina">
+                </div>
+                <div>
+                    <img src="/assets/files/images/compressed/jeansMujeres.webp"
+                    alt="Jeans para Mujeres">
+                </div>
+                <div>
+                    <img src="/assets/files/images/compressed/asesoraImagen.webp"
+                    alt="Asesora de Imagen">         
+                </div>
             </div>
-            <div>
-                <img src="/assets/files/images/compressed/jeansMujeres.webp"
-                alt="Jeans para Mujeres">
-            </div>
-            <div>
-                <img src="/assets/files/images/compressed/asesoraImagen.webp"
-                alt="Asesora de Imagen">         
+            <div class="slider desktopOnly">
+                <div>
+                    <img src="/assets/files/images/compressed/modaDesktop.webp"
+                    alt="Moda femenina">
+                </div>
+                <div>
+                    <img src="/assets/files/images/compressed/jeansMujeres.webp"
+                    alt="Jeans para Mujeres">
+                </div>
+                <div>
+                    <img src="/assets/files/images/compressed/asesoraImagen.webp"
+                    alt="Asesora de Imagen">         
+                </div>
             </div>
         </section>
         
@@ -111,7 +129,7 @@
         <section class="banner">
             <div class="bannerContent">
                 <h2>NUEVA COLECCIÓN</h2>
-                <a href="#newCollection" class="bannerLink">ver más</a>
+                <a href="#" class="bannerLink">ver más</a>
             </div>
         </section>
     </main>
@@ -146,8 +164,8 @@
             arrows: false,
             fade: true,
             autoplay: true,
-            autoplaySpeed: 1000, 
-            dots: true, 
+            autoplaySpeed: 3000, 
+            dots: false,
         });
     </script>
 </body>
