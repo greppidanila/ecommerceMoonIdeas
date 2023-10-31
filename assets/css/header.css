@@ -1,13 +1,161 @@
-.header {
-    position: fixed;
-    z-index: 100;
-    background-color: red;
-    left: 0;
-    right: 0; 
-    top: 20;
-    height: var(--header-height);
-    width: 90%;
-    margin: 0 auto; 
+header {
+  position: fixed;
+  z-index: 100;
+  width: 90%;
+  left: 0;
+  right: 0; 
+  top: 20px;
+  margin: 0 auto; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--white);
+  height: var(--header-height);
+}
+
+.mobileOnly{
+  display: block !important;
+}
+
+.desktopOnly{
+  display: none !important;
+} 
+
+.mobileToggle {
+  padding-left: 17px;
+}
+
+.mobileToggle img {
+  width: 24px;
+  height: 24px;
+}
+
+.logo{
+  display: flex;
+  justify-content: center;
+}
+
+.logo img{
+  max-width: 124px;
+}
+
+.icons {
+  display: flex;
+}
+
+.icons span {
+  display: flex;
+}
+
+.icons span img {
+  padding-right: 5px;
+  width: 12.5px;
+}
+
+.cartAmount {
+  padding-right: 17px;
+}
+
+/* Media query para dispositivos de escritorio */
+@media (min-width: 1024px) {
+  .header{
+    height: 74px;
+  }
+
+  .mobileOnly{
+    display: none !important;
+  }
+
+  .desktopOnly{
+    display: block !important;
+  }
+
+  .logo {
+    padding-left: 24px;
+  }
+
+  .logo img{
+    max-width: 100%;
+  }
+
+  .desktopNav {
+      display: flex;
+  }
+
+  .desktopNav ul {
+      list-style: none;
+      display: flex;
+      padding: 0;
+  }
+
+  .desktopNav ul li {
+      position: relative;    
+      display: flex;
+      align-items: center;
+      margin-right: 50px;
+      text-transform: uppercase;
+      font-weight: var(--font-medium);
+  }
+  
+
+  /* Estilos para los íconos de flecha */
+  .desktopNav img {
+    width: 8px;
+    height: auto;
+    margin-left: 5px; 
+  }
+
+  .menuHeader{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .transparentDiv {
+    display: none;
+    position: absolute;
+    height: 50px; 
+    background-color: transparent;
+    width: 100%;
+    top: 100%;
+  }
+  
+  .desktopNav ul li .dropdownMenu {
+    position: absolute;
+    top: 70px; /* Mover el submenu hacia abajo */
+    left: -35px;
+    display: none;
+    background-color: var(--white);
+  }
+
+  /* Muestra el submenú cuando se pasa el cursor sobre el elemento principal */
+  .desktopNav ul li:hover .transparentDiv, .desktopNav ul li:hover .dropdownMenu, .desktopNav ul li .dropdownMenu ul {
+    display: block;
+  }
+
+  .desktopNav ul li:hover .dropdownMenu ul li {
+    width: calc(198px - 64px);
+    margin: 32px;
+  }
+
+  .desktopNav li:hover ul .subMenuItem{
+    text-transform: capitalize;
+  }
+
+  .desktopNav li:hover ul .subMenuItem:hover {
+    text-decoration: underline;
+  }
+
+  .icons {    
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
+
+  .icons span{    
+    padding-left: 27px;
+  }
+
+  .cartAmount {
+    padding-right: 30px;
+  }
+}

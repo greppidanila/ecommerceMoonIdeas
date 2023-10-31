@@ -17,122 +17,104 @@
     <link rel="stylesheet" href="/assets/css/header.css" type="text/css">
     <link rel="stylesheet" href="/assets/css/products.css" type="text/css">
     <link rel="stylesheet" href="/assets/css/footer.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    
 </head>
 <body>
     <!-- Header -->
-    <!-- <header class="header">
-        <i class="bx bxMenu" id="menuIcon"></i> -->
-        <!-- <nav class="nav">
-            <div class="navToogle mobile">
-                <img src="/assets/files/icons/toogle.svg" alt="">
-            </div>
-            <div class="logo">
-                <a href="/">
-                    <img id="headerLogo" src="/assets/files/images/logo.svg">
-                </a>
-            </div>
-            <div class="menuNav mobile">
-                <ul class="menuList">
-                    <li class="menuItem"><a href="#shop" class="menuLink">SHOP</a>
-                        <ul class="subMenuList">
-                            <li><a href="#">Nueva colección</a></li>
-                            <li><a href="#">Vestimenta</a></li>
-                            <li><a href="#">Accesorios</a></li>
-                            <li><a href="#">Calzado</a></li>
-                            <li style="bold"><a href="#">SALE</a></li>
-                        </ul>
+    <header>
+        <div class="mobileToggle mobileOnly">
+            <a href="/index.html">
+                <img src="/assets/files/icons/toggle.svg" alt="Icono de menú">
+            </a>
+        </div>
+
+        <div class="logo">
+            <img src="/assets/files/images/logo.svg" alt="Logo">
+        </div>
+
+        <div class="menuHeader">
+            <nav class="desktopNav desktopOnly" >
+                <ul>
+                    <li>
+                        <a href="#">Shop</a>
+                        <img src="/assets/files/icons/headerArrow.svg" alt="Icono de menú desplegable">
+                        <div class="transparentDiv"></div>
+                        <div class="dropdownMenu">
+                            <ul>
+                                <li><a href="#" class="subMenuItem">Nueva Colección</a></li>
+                                <li><a href="#" class="subMenuItem">Vestimenta</a></li>
+                                <li><a href="#" class="subMenuItem">Accesorios</a></li>
+                                <li><a href="#"class="subMenuItem">Calzado</a></li>
+                                <li><a href="#" class="subMenuItem" style="font-weight: bold">SALE</a></li>
+                            </ul>
+                        </div>
                     </li>
-                    <li class="menuItem"><a href="#newcollection" class="menuLink">NUEVA COLECCIÓN</a></li>
-                    <li class="menuItem"><a href="#aboutus" class="menuLink">ABOUT US</a></li>
-                    <li class="menuItem"><a href="#contact" class="menuLink">CONTACTO</a></li>
+                    <li>
+                        <a href="#">Nueva Colección</a> 
+                        <img src="/assets/files/icons/headerArrow.svg" alt="Icono de menú desplegable">
+                        <div class="transparentDiv"></div>
+                        <div class="dropdownMenu">
+                            <ul>
+                                <li><a href="#" class="subMenuItem">Vestimenta</a></li>
+                                <li><a href="#" class="subMenuItem">Accesorios</a></li>
+                                <li><a href="#" class="subMenuItem">Calzado</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contacto</a></li>
                 </ul>
-            </div>            
-            <div class="menuDesktop desktop">
-                <ul class="menuDesktopList">
-                    <li class="menuDesktopItem"><a href="#shop" class="menuDesktopLink">SHOP</a></li>
-                    <li class="menuDesktopItem"><a href="#newcollection" class="menuDesktopLink">NUEVA COLECCIÓN</a></li>
-                    <li class="menuDesktopItem"><a href="#aboutus" class="menuDesktopLink">ABOUT US</a></li>
-                    <li class="menuDesktopItem"><a href="#contact" class="menuDesktopLink">CONTACTO</a></li>
-                </ul>
+            </nav>
+            <div class="icons">
+                <span class="desktopOnly" >
+                    <img src="assets/files/icons/user.svg" alt="Icono de usuario">
+                </span>
+                <span class="desktopOnly">
+                    <img src="assets/files/icons/heart.svg" alt="Icono de favorito">
+                </span>
+                <span>
+                    <img src="assets/files/icons/cart.svg" alt="Icono de carrito"> 
+                    <div class="cartAmount"> (3) </div>
+                </span>
             </div>
-            <div class="iconsList">
-                <div class="user desktop">
-                    <img src="/assets/files/icons/user.svg" alt="usuario" class="userIcon">
-                </div> 
-                <div class="heart desktop">
-                    <img src="/assets/files/icons/heart.svg" alt="favorito" class="heartIcon">
-                </div> 
-                <div class="cart">
-                    <img src="/assets/files/icons/cart.svg" alt="carrito" class="cartIcon"> (0)
-                </div>                
-            </div>
-        </nav> -->
+        </div>
     </header>
-
-    <!-- Slider -->
-    <!-- <div class="slider">
-        <div class="slide mobile"><img src="/assets/files/images/compressed/modaMobile.webp" alt=""></div>
-        <div class="slide desktop"><img src="/assets/files/images/compressed/modaDesktop.webp" alt=""></div>
-    </div> -->
-    <!-- Products -->
-    <section class="products">
-        <h2 class="productsHeading">NUESTROS FAVORITOS</h2>
-        <div class="productsList">
-            <div class="productCard">
-                <div class="productImage">
-                    <img src="/assets/files/images/compressed/pantalonAzul.webp" alt="Pantalón azul">
-                    <span class="saleTag">SALE</span>
-                </div>
-                <div class="productDetails">
-                    <div class="productsInfo">
-                        <h3>Pantalón azul</h3>
-                        <img src="/assets/files/icons/heart.svg" alt="Favorito" class="favoriteIcon">
-                    </div>
-                    <div class="productsPrice">
-                        <p class="oldPrice">$1000</p>
-                        <p class="newPrice">$900</p>
-                    </div>
-                </div>
+    
+    <main>
+        <!-- Slider -->
+        <section class="slider">
+            <div>
+                <img src="/assets/files/images/compressed/modaMobile.webp"
+                alt="Moda femenina">
             </div>
-
-            <div class="productCard">
-                <div class="productImage">
-                    <img src="/assets/files/images/compressed/camisaLinoCeleste.webp" alt="Camisa de lino celeste">
-                </div>
-                <div class="productDetails">
-                    <div class="productsInfo">
-                        <h3>Camisa de lino celeste</h3>
-                        <img src="/assets/files/icons/heart.svg" alt="Favorito" class="favoriteIcon">
-                    </div>
-                    <div class="productsPrice">
-                        <p class="newPrice">$860</p>
-                    </div>
-                </div>
+            <div>
+                <img src="/assets/files/images/compressed/jeansMujeres.webp"
+                alt="Jeans para Mujeres">
             </div>
-
-            <div class="productCard">
-                <div class="productImage">
-                    <img src="/assets/files/images/compressed/chaquetaMoonideas.webp" alt="Chaqueta Moonideas">
-                </div>
-                <div class="productDetails">
-                    <div class="productsInfo">
-                        <h3>Chaqueta Moonideas</h3>
-                        <img src="/assets/files/icons/heart.svg" alt="Favorito" class="favoriteIcon">
-                    </div>
-                    <div class="productsPrice">
-                        <p class="newPrice">$1500</p>
-                    </div>
-                </div>
+            <div>
+                <img src="/assets/files/images/compressed/asesoraImagen.webp"
+                alt="Asesora de Imagen">         
             </div>
-        </div>
-    </section>
-    <!-- Banner New Collection -->
-    <section class="banner">
-        <div class="bannerContent">
-            <h2>NUEVA COLECCIÓN</h2>
-            <a href="#newCollection" class="bannerLink">ver más</a>
-        </div>
-    </section>
+        </section>
+        
+        <!-- Products -->
+        <section class="products">
+            <h2 class="productsHeading">NUESTROS FAVORITOS</h2>
+            <div class="productsList"  id="productsList">
+                <!-- Aquí se visuliza listado de productos con Js -->
+            </div>
+        </section>
+
+        <!-- Banner New Collection -->
+        <section class="banner">
+            <div class="bannerContent">
+                <h2>NUEVA COLECCIÓN</h2>
+                <a href="#newCollection" class="bannerLink">ver más</a>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
@@ -148,6 +130,25 @@
     </footer>
 
     <!-- Main Js -->
-    <script src="/assets/main.js"></script>
+    <script src="/assets/js/main.js"></script>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <!-- Slick Slider -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    
+    <!-- Configuración de Slick Slider -->
+    <script type="text/javascript">
+        $('.slider').slick({        
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            autoplay: true,
+            autoplaySpeed: 1000, 
+            dots: true, 
+        });
+    </script>
 </body>
 </html>

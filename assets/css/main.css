@@ -33,7 +33,7 @@
 body, *::before, *::after {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;    
+  box-sizing: border-box; 
 }
 
 body {    
@@ -91,40 +91,73 @@ a {
 }
 
 .mobile {
-  display: none !important;
+  display: block !important;
 }
 
 .desktop {
-  display: block !important;
+  display: none !important;
 }
 
 @media screen and (min-width: 968px) {
   :root {
     --header-height: 4.625rem; /* 74px */
   }
+
+  .mobile {
+    display: none !important;
+  }
+  
+  .desktop {
+    display: block !important;
+  }
 }
 
 /*-- Slider --*/
-.slider{
-  width: 100%;
-  height: auto;
+
+.slider {
   position: relative;
-  background-position: center;
-  background-size: auto;
-  background-repeat: no-repeat;
-}
-
-.slider .slide img {
-  height: auto;
   width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@media screen and (min-width: 1024px) {
-  .slider .slide img {
-    height: auto;
-    width: 100%;
+.slider img {
+  width: 100%;
+  height: 561px;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.slick-dots{
+  bottom: 5px !important;
+}
+
+@media (min-width: 968px) {
+  .slider img {
+    height: 858px;
+  }
+  .slider img:nth-child(1){
+    object-position: center bottom;
   }
 }
+
+
+/* CSS adicional para rotar las imágenes */
+.slider .slick-slide {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.slider .slick-slide.slick-current {
+  opacity: 1;
+}
+
+.slider .slick-slide:not(.slick-current) {
+  opacity: 0;
+}
+
 
 /* -- Banner New Collection -- */
 .banner {
@@ -152,8 +185,6 @@ a {
   text-decoration: underline;
   font-size: var(--large-font-size)
 }
-
-
 
 @media screen and (min-width: 968px) {
   .banner {

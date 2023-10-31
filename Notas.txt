@@ -1,7 +1,7 @@
-Compremí imágenes a WEBP con Squosh y Converter
-Agregué la BOLD font
-Convertí las fuentes .otf a formatos web
-
-Distinta imagen para banner, quería acomodarla con background position pero terminé reemplazando la img porque no quedaba tal cual figma.
-
-@foreach($productos as $producto)
+Comprimir imágenes a WEBP con Squosh y Converter
+Agregar la BOLD font
+Convertir fuentes .otf a formatos web
+Header con submenu flotante / espacio interno que dificulta la continuidad del hover
+Hero con slider Jquery y responsive
+Lista de productos, priorizar uso de JS con @foreach
+Distinta imagen de banner final en mobile y desktop: acomodarla con background position / reemplar la img segun dispositivo
